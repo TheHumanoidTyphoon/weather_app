@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+  {% block others %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style3.css') }}">
+  {% endblock others %}
+
+  {% block title %}
+  WeatherCast | About Us
+  {% endblock title %}
+
+{% block content %}
+    <h1>About WeatherCast App</h1>
+    {% include 'partials/navbar.html' %}
+    <div class="container1">
+      
+      <p>Hi, I'm [Your Name], and I created WeatherCast app to help people stay up-to-date on the weather conditions in their area.</p>
+    </div>
+  
+    <div class="container2">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Real-time weather updates</li>
+        <li>Hourly and daily forecasts</li>
+        <li>Interactive radar maps</li>
+        <li>Customizable weather alerts</li>
+        <li>Easy-to-use interface</li>
+      </ul>
+      <p>These features make WeatherCast app stand out from other weather apps, as they provide users with accurate and up-to-date weather information in an easy-to-understand format.</p>
+    </div>
+  
+    <div class="container3">
+      <h2>Development History</h2>
+      <p>We started developing WeatherCast app in [year] with the goal of creating a weather app that was both easy to use and informative. Throughout the development process, we faced several challenges, such as [list any challenges you faced, such as technical difficulties or design issues]. However, we overcame these challenges by [explain how you overcame them, such as working with a developer or redesigning the user interface].</p>
+    </div>
+  
+    <div class="container4">
+      <h2>Screenshots and Videos</h2>
+      <p>Check out some screenshots and a video of WeatherCast app in action:</p>
+      <img src="[insert image URL]" alt="WeatherCast app screenshot">
+      <video width="320" height="240" controls>
+        <source src="[insert video URL]" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  
+    <div class="container5">
+      <h2>Data Sources</h2>
+      <p>WeatherCast app gets its weather data from [insert data source, such as the National Weather Service or a private weather company]. Our data is updated [insert frequency, such as every 15 minutes] to ensure that users have access to the most accurate and up-to-date weather information possible.</p>
+    </div>
+  
+    <div class="container6">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or feedback about WeatherCast app, feel free to contact us at [insert email address] or through our [insert social media profiles]. We would love to hear from you!</p>
+    </div>
+{% endblock %}
+
