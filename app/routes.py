@@ -1,6 +1,7 @@
 from flask import render_template, request
-from app.app import app
+from app.app import app, db
 import smtplib
+from app.models import Email
 
 @app.route('/')
 def index():
@@ -14,6 +15,10 @@ def about():
 def contact():
     return render_template('contact.html')
 
+@app.errorhandler(404)
+def page_not_found_error(error):
+    return render_template('404.html'), 404
+
 @app.route('/process-form', methods=['POST'])
 def process_form():
     # Get form data
@@ -21,10 +26,15 @@ def process_form():
     email = request.form['email']
     message = request.form['message']
 
+    # Save email to database
+    email_obj = Email(email=email)
+    db.session.add(email_obj)
+    db.session.commit()
+
     # Send email
-    sender_email = "your_email@example.com"
-    receiver_email = "recipient_email@example.com"
-    password = "your_email_password"
+    sender_email = ""
+    receiver_email = email
+    password = ""
     message_text = f"Name: {name}\nEmail: {email}\nMessage: {message}"
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()

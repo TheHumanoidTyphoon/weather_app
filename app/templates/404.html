@@ -1,0 +1,26 @@
+{% extends 'partials/base.html' %}
+
+{% block title %}
+Page Not Found - WeatherCast
+{% endblock title %}
+
+{% block others %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/css/style_4.css') }}">
+{% endblock others %}
+
+{% block content %}
+{% include 'partials/navbar.html' %}
+
+<div class="container">
+  <div class="not-found">
+    <img src="{{ url_for('static', filename='images/404.png') }}"></img>
+    <p>Oops! We couldn't find the page you were looking for.</p>
+    <p>We're sorry for the inconvenience.</p>
+    <form action="/">
+      <input type="text" placeholder="Search">
+      <button type="submit">Go</button>
+    </form>
+    <p>Or you can visit our <a href="/">homepage</a> or check out our <a href="#">popular pages</a>.</p>
+  </div>
+</div>
+{% endblock %}

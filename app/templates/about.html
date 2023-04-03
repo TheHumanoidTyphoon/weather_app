@@ -1,8 +1,12 @@
-{% extends 'base.html' %}
+{% extends 'partials/base.html' %}
 
   {% block others %}
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style3.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/css/style_3.css') }}">
   {% endblock others %}
+
+  {% block responsive %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/responsive/responsive_3.css') }}">
+  {% endblock responsive %}
 
   {% block title %}
   WeatherCast | About Us

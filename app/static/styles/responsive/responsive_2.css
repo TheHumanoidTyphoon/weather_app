@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+/* For smaller screens */
+@media (max-width: 1199px) {
+  .navbar-nav {
+      position: relative;
+      top: initial;
+      left: initial;
+      padding: 0;
+      display: flex;
+      flex-direction: row; /* change the direction from column to row */
+      justify-content: space-around; /* add this property to distribute the space between the buttons */
+      align-items: center;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      color: #ffffff;
+      font-size: 13px;
+      border-radius: 18px;
+      width: 100%;
+      transition: 0.2s;
+    }
+
+  .logo-img {
+    top: 10px;
+    left: 10px;
+    width: 150px;
+  }
+
+  .navbar {
+    top: 10px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+    .logo-img {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        width: 100px;
+      }
+  
+      .navbar-nav {
+          position: relative;
+          top: initial;
+          left: initial;
+          padding: 0;
+          display: flex;
+          flex-direction: row; /* change the direction from column to row */
+          justify-content: space-around; /* add this property to distribute the space between the buttons */
+          align-items: center;
+          font-weight: bold;
+          font-family: 'Roboto', sans-serif;
+          color: #ffffff;
+          font-size: 13px;
+          border-radius: 18px;
+          width: 100%;
+          transition: 0.2s;
+        }
+        
+      .navbar-nav li {
+        margin: 10px 0;
+      }
+  
+      .navbar-nav li a:hover {
+          background-color: #fff;
+          color: #101d6b;
+          
+          padding: 10px 20px;
+          
+      }
+      
+  
+      h1 {
+        position: relative;
+        top: 0;
+        display: block;
+        font-size: 2rem;
+        order: 1; /* set the order of h1 to 1 */
+      }
+      
+      .form {
+        display: flex;
+        flex-direction: column; /* change the direction of flex to column */
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 18px;
+        order: 2; /* set the order of .form to 2 */
+      }
+      
+  
+    input[type="submit"] {
+      left: 0;
+      border-radius: 18px;
+    }
+  
+  }
+  
