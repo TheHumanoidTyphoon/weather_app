@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-1: #101d6b;
+    --color-2: #2e3b85;
+    --color-3: #fff;
+  }
+
 .navbar {
     position: absolute;
     top: 50px;
@@ -27,14 +33,14 @@
       display: flex;
       font-weight: bold;
       font-family: 'Roboto', sans-serif;
-      color: #ffffff;
+      color: var(--color-3);
       font-size: 20px;
     }
   
   
   .navbar-nav li a:hover {
-    background-color: #fff;
-    color: #101d6b;
+    background-color: var(--color-3);
+    color: var(--color-1);
     border-radius: 18px;
     padding: 10px 20px;
     transition: 0.2s;
@@ -46,7 +52,7 @@
   }
   
   .nav-link {
-    color: #fff;
+    color: var(--color-3);
     text-decoration: none;
     font-size: 20px;
   }
@@ -67,11 +73,11 @@ body {
     align-items: center;
     justify-content: center;
     display: block;
-    background: #101d6b;
-    background: -webkit-linear-gradient(to right, #101d6b, #2e3b85);
-    background: linear-gradient(to right, #101d6b, #2e3b85);
+    background: var(--color-1);
+    background: -webkit-linear-gradient(to right, var(--color-1), var(--color-2));
+    background: linear-gradient(to right, var(--color-1), var(--color-2));
     font-family: 'Roboto', sans-serif;
-    color: #ffffff;
+    color: var(--color-3);
 }
 
 
@@ -131,8 +137,8 @@ video {
     transform: translate(-50%, -50%);    
     width: 1000px;
     height: 500px;
-    background: #fff;
-    color: #101d6b;
+    background: var(--color-3);
+    color: var(--color-1);
     align-items: center;
     justify-content: center;
     padding: 28px 48px;
@@ -149,8 +155,8 @@ video {
     width: 1000px;
     height: 500px;
     display: block;
-    background: #fff;
-    color: #101d6b;
+    background: var(--color-3);
+    color: var(--color-1);
     align-items: center;
     justify-content: center;
     padding: 28px 48px;
@@ -166,8 +172,8 @@ video {
     transform: translate(-50%, -50%);    
     width: 1000px;
     height: 500px;
-    background: #fff;
-    color: #101d6b;
+    background: var(--color-3);
+    color: var(--color-1);
     align-items: center;
     justify-content: center;
     padding: 28px 48px;
@@ -184,8 +190,8 @@ video {
     width: 1000px;
     height: 500px;
     display: block;
-    background: #fff;
-    color: #101d6b;
+    background: var(--color-3);
+    color: var(--color-1);
     align-items: center;
     justify-content: center;
     padding: 28px 48px;
@@ -202,8 +208,8 @@ video {
     width: 1000px;
     height: 500px;
     display: block;
-    background: #fff;
-    color: #101d6b;
+    background: var(--color-3);
+    color: var(--color-1);
     align-items: center;
     justify-content: center;
     padding: 28px 48px;
@@ -219,8 +225,8 @@ video {
     transform: translate(-50%, -50%);    
     width: 1000px;
     height: 500px;
-    background: #fff;
-    color: #101d6b;
+    background: var(--color-3);
+    color: var(--color-1);
     align-items: center;
     justify-content: center;
     padding: 28px 48px;
@@ -237,7 +243,7 @@ footer {
     padding: 10px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: white;
+    color: var(--color-3);
     margin-top: 100px;
   }
 

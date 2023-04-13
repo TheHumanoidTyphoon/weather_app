@@ -1,4 +1,4 @@
-from app.app import db
+from .app import db
 
 class Email(db.Model):
     id = db.Column(db.Integer, primary_key=True)

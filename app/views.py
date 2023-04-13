@@ -1,5 +1,5 @@
 from flask.views import MethodView
-from app.app import app
+from .app import app
 
 class WeatherAPI(MethodView):
     def get(self):

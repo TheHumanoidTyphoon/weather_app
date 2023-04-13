@@ -5,11 +5,19 @@
     outline: none;
     box-sizing: border-box;
   }
+
+  :root {
+    --color-1: #101d6b;
+    --color-2: #2e3b85;
+    --color-3: #fff;
+    --color-4: #e84343;
+  }
+
   
   body {
-    background: #101d6b;
-    background: -webkit-linear-gradient(to right, #101d6b, #2e3b85);
-    background: linear-gradient(to right, #101d6b, #2e3b85);
+    background: var(--color-1);
+    background: -webkit-linear-gradient(to right, var(--color-1), var(--color-2));
+    background: linear-gradient(to right, var(--color-1), var(--color-2));
     display: grid;
     place-items: center;
     margin: 0;
@@ -40,14 +48,14 @@
       display: flex;
       font-weight: bold;
       font-family: 'Roboto', sans-serif;
-      color: #ffffff;
+      color: var(--color-3);
       font-size: 20px;
     }
   
   
   .navbar-nav li a:hover {
-    background-color: #fff;
-    color: #101d6b;
+    background-color: var(--color-3);
+    color: var(--color-1);
     border-radius: 18px;
     padding: 10px 20px;
     transition: 0.2s;
@@ -59,7 +67,7 @@
   }
   
   .nav-link {
-    color: #fff;
+    color: var(--color-3);
     text-decoration: none;
   }
   
@@ -77,7 +85,7 @@
     position: relative;
     width: 400px;
     height: 600px;
-    background: #fff;
+    background: var(--color-3);
     padding: 28px 32px;
     overflow: hidden;
     border-radius: 18px;
@@ -88,7 +96,7 @@
 
   
   a {
-    color: #e84343;
+    color: var(--color-4);
     text-decoration: none;
   }
   
@@ -113,7 +121,7 @@
     margin: 20px 0;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    color: #2e3b85;
+    color: var(--color-2);
   }
   
   .not-found form {
@@ -123,7 +131,7 @@
   .not-found input[type="text"] {
     width: 200px;
     padding: 5px;
-    color: #101d6b;
+    color: var(--color-1);
     border: 1px solid #ccc;
     border-radius: 5px;
   }
@@ -131,16 +139,16 @@
   .not-found button[type="submit"] {
     padding: 5px 15px;
     border-radius: 5px;
-    background-color: #101d6b;
-    color: #fff;
+    background-color: var(--color-1);
+    color: var(--color-3);
     border: none;
     cursor: pointer;
     margin-left: 5px;
   }
   
   .not-found button[type="submit"]:hover {
-    background-color: #fff;
-    color: #101d6b;
+    background-color: var(--color-3);
+    color: var(--color-1);
     border-radius: 18px;
     padding: 10px 20px;
     transition: 0.2s;
@@ -158,5 +166,5 @@
     padding: 10px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: white;
+    color: var(--color-3);
   }
