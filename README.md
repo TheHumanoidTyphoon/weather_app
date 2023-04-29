@@ -1,5 +1,5 @@
 # WeatherCast
-WeatherCast is a user-friendly web platform that utilizes the Flask framework and OpenWeather API to provide accurate and real-time weather information tailored to a specified location, making it a reliable and efficient tool.
+WeatherCast is a user-friendly web platform that utilizes the Flask framework and OpenWeather API to provide accurate and real-time weather information tailored to a specified location, making it a reliable and efficient .
 
 ## Installation
 - Clone the repository:
